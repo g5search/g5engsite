@@ -1,16 +1,19 @@
 #G5 Engineering Site#
   
-##Getting Started
-  
+##Getting Started  
 
-```bash
+This is G5's implementation of RefineryCMS to showcase the Engineers and what we do, 
+how we do it, and what we do for fun.  If you are a contributor, awesome. Clone the 
+repo and get started!
+
+```plain
 git clone git@github.com:libryder/g5devsite.git  
 cd g5devsite
 bundle
 rake db:migrate
 rake db:seed
 rails s
-```
+```  
 
 ###Add a hostname (to access production)
 **sudo nano /etc/hosts**  
@@ -20,11 +23,9 @@ Add the following line:  
 74.207.249.68    g5engsite.com
 ```
 
-###Overriding a particular view  
-For example, if you want to override the footer:
-```bash
-rake refinery:override view=refinery/_footer.html
-```
+###RefineryCMS Guides  
+* Documentation is available in the [guides](http://refinerycms.com/guides)
+* Questions can be asked on our [Google Group](http://group.refinerycms.org)
 
 ##Contributing  
 
