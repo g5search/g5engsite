@@ -1,0 +1,29 @@
+fr:
+  refinery:
+    plugins:
+      profiles:
+        title: Profiles
+    profiles:
+      admin:
+        profiles:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Profile
+            reorder: Réordonner les Profiles
+            reorder_done: Fin de réordonnancement des Profiles
+          records:
+            title: Profiles
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Profile. Cliquer sur "Créer un(e) nouve(au/l/lle) Profile" pour créer votre premi(er/ère) profile.'
+          profile:
+            view_live_html: Voir ce(t/tte) profile <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) profile
+            delete: Supprimer définitivement ce(t/tte) profile
+      profiles:
+        show:
+          other: Autres Profiles
+  activerecord:
+    attributes:
+      'refinery/profiles/profile':
+        name: Name
+        bio: Bio
+        picture: Picture

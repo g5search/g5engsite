@@ -1,0 +1,29 @@
+nb:
+  refinery:
+    plugins:
+      profiles:
+        title: Profiles
+    profiles:
+      admin:
+        profiles:
+          actions:
+            create_new: Lag en ny Profile
+            reorder: Endre rekkefølgen på Profiles
+            reorder_done: Ferdig å endre rekkefølgen Profiles
+          records:
+            title: Profiles
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Profiles enda. Klikk på "Lag en ny Profile" for å legge til din første profile.
+          profile:
+            view_live_html: Vis hvordan denne profile ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne profile
+            delete: Fjern denne profile permanent
+      profiles:
+        show:
+          other: Andre Profiles
+  activerecord:
+    attributes:
+      'refinery/profiles/profile':
+        name: Name
+        bio: Bio
+        picture: Picture

@@ -1,0 +1,14 @@
+<% content_for :body_content_left do %>
+
+    <% @profiles.each do |profile| %>
+      <div class="profile">
+      	<%= image_fu profile.picture, nil %>
+      	<%# profile.name.html_safe %>
+      	<%# profile.bio.html_safe %>
+        <%= link_to profile.name, refinery.profiles_profile_path(profile) %>
+      </div>
+    <% end %>
+
+<% end %>
+
+<%= render '/refinery/content_page' %>
