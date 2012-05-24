@@ -6,6 +6,7 @@
 ```bash
 git clone git@github.com:libryder/g5devsite.git  
 cd g5devsite
+bundle
 rake db:migrate
 rake db:seed
 rails s
