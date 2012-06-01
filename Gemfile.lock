@@ -43,6 +43,8 @@ GEM
     babosa (0.3.7)
     bcrypt-ruby (3.0.1)
     bootstrap-sass (2.0.3.1)
+    bourbon (1.0.4)
+      sass (>= 3.1)
     builder (3.0.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -201,13 +203,14 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass
+  bourbon
   coffee-rails (~> 3.2.1)
   jquery-rails
   rails (= 3.2.3)
   refinerycms (~> 2.0.0)
   refinerycms-blog (~> 2.0.0)
   refinerycms-i18n (~> 2.0.0)
-  refinerycms-page-images
+  refinerycms-page-images (~> 2.0.0)
   refinerycms-profiles!
   sass-rails (~> 3.2.3)
   sqlite3
