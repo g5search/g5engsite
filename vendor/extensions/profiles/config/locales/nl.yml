@@ -1,0 +1,29 @@
+nl:
+  refinery:
+    plugins:
+      profiles:
+        title: Profiles
+    profiles:
+      admin:
+        profiles:
+          actions:
+            create_new: Maak een nieuwe Profile
+            reorder: Wijzig de volgorde van de Profiles
+            reorder_done: Klaar met het wijzingen van de volgorde van de Profiles
+          records:
+            title: Profiles
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Profiles. Druk op 'Maak een nieuwe Profile' om de eerste aan te maken.
+          profile:
+            view_live_html: Bekijk deze profile op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze profile
+            delete: Verwijder deze profile voor eeuwig
+      profiles:
+        show:
+          other: Andere Profiles
+  activerecord:
+    attributes:
+      'refinery/profiles/profile':
+        name: Name
+        bio: Bio
+        picture: Picture

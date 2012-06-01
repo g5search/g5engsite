@@ -1,0 +1,29 @@
+en:
+  refinery:
+    plugins:
+      profiles:
+        title: Profiles
+    profiles:
+      admin:
+        profiles:
+          actions:
+            create_new: Add New Profile
+            reorder: Reorder Profiles
+            reorder_done: Done Reordering Profiles
+          records:
+            title: Profiles
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Profiles yet. Click "Add New Profile" to add your first profile.
+          profile:
+            view_live_html: View this profile live <br/><em>(opens in a new window)</em>
+            edit: Edit this profile
+            delete: Remove this profile forever
+      profiles:
+        show:
+          other: Other Profiles
+  activerecord:
+    attributes:
+      'refinery/profiles/profile':
+        name: Name
+        bio: Bio
+        picture: Picture
