@@ -1,5 +1,24 @@
 <%# render '/refinery/content_page' %>
 
+<section id="about">
+  <div class="wrap">
+    <div class="column">
+      <h2 class="circle">This is What We Do</h2>
+      <%=raw @page.content_for(:bubble1) %>
+    </div>
+
+    <div class="column">
+      <h3 class="circle">This is How We Do It</h3>
+      <%=raw @page.content_for(:bubble2) %>
+    </div>
+
+    <div class="column right">
+      <h3 class="circle">This is What We Use</h3>
+      <%=raw @page.content_for(:bubble3) %>
+    </div>
+  </div>
+</section>
+
 <section id='body_content'>
   <%=raw @page.content_for(:body) %>
 </section>

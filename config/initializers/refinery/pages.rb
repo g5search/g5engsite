@@ -27,7 +27,7 @@ Refinery::Pages.configure do |config|
 
   # Set this to true if you want to override slug which automatically gets generated
   # when you create a page
-  config.use_custom_slugs = false
+  config.use_custom_slugs = true
 
   # Set this to true if you want backend pages to be cached
   # config.cache_pages_backend = false
@@ -44,7 +44,7 @@ Refinery::Pages.configure do |config|
 
   config.use_layout_templates = false
 
-  config.use_view_templates = false
+  config.use_view_templates = true
 
   config.page_title = {:chain_page_title=>false, :ancestors=>{:separator=>" | ", :class=>"ancestors", :tag=>"span"}, :page_title=>{:class=>nil, :tag=>nil, :wrap_if_not_chained=>false}}
 
