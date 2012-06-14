@@ -9,54 +9,12 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
 */
-@import "bourbon";
+
 @import "normalize";
 
-html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd,
-q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr,
-th, td, article, aside, figure, footer, header, hgroup, menu, nav,
-section, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-}
-article, aside, figure, footer, header, hgroup, nav, section {display: block;}
-img,
-object,
-embed {max-width: 100%;}
-html {overflow-y: scroll;}
-ul {list-style: none;}
-blockquote, q {quotes: none;}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {content: ''; content: none;}
-a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
-input, select {vertical-align: middle;}
-pre {
-  white-space: pre; /* CSS2 */
-  white-space: pre-wrap; /* CSS 2.1 */
-  white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
-  word-wrap: break-word; /* IE */
-}
-input[type="radio"] {vertical-align: text-bottom;}
-input[type="checkbox"] {vertical-align: bottom; *vertical-align: baseline;}
-select, input, textarea {font: 99% sans-serif;}
-strong, th {font-weight: bold;}
-td, td img {vertical-align: top;}
-button, input, select, textarea {margin: 0;}
-button {width: auto; overflow: visible;}
-
 body {
-  background:#000;
+  background:#fff;
   font-size:13px;
   font-family:sans-serif;
 }
@@ -69,8 +27,10 @@ h2 { font-size:40px; text-shadow:-1px -1px 0 #c55215; }
   margin:0 auto;
 }
 
+// start header
+
 header {
-  height:485px;
+  height:215px;
   background:url(header-bg.png) repeat #eee;
   border-bottom:25px solid #383838;
   text-shadow: 1px 1px 0 white;
@@ -103,10 +63,6 @@ header ul a {
 
 }
 
-header ul li a {
-
-
-}
 
 header ul span {
   display:block;
@@ -136,8 +92,8 @@ header li.last a{
 }
 
 header h1 {
-  padding-top:55px;
-  font-size:171px;
+  padding-top:50px;
+  font-size:70px;
   font-weight:normal;
   color:#282828;
   font-family: 'Rokkitt', serif;
@@ -145,71 +101,13 @@ header h1 {
   margin:0;
 }
 
-header small {
-  font-size:49px;
-  margin-left:30px;
-}
-
-header small span {
-  position:relative;
-  top: 9px;
-}
-
 header em { font-style:normal; color:#fd742a; }
 
-header p {
-  float: right;
-  width: 652px;
-  /*margin-top: 50px;*/
-  line-height: 27px;
-  font-size: 14px;
-  color:#666;
-}
 
-header img.arrow-down-left {
-  position:absolute;
-  top:393px; left:285px;
-}
 
-.column {
-  width:288px;
-  padding-right:45px;
-  float:left;
-}
+// end header 
 
-.right { padding-right:none; }
 
-.circle {
-  border:18px solid #fd742a;
-  background:#df692a;
-  text-shadow:#c55215;
-  color:#fff;
-  height:182px;
-  width:182px;
-  -moz-border-radius:129px;
-  -webkit-border-radius:129px;
-  border-radius:129px;
-  text-align:center;
-  margin-left:54px;
-  position:relative;
-  top: -37px;
-}
-
-h2.circle {
-  border:22px solid #fd742a;
-  width:268px;
-  height:268px;
-  margin-left:0;
-  -moz-border-radius:155px;
-  -webkit-border-radius:155px;
-  border-radius:155px;
-  top: -131px;
-}
-
-#about {
-  height:500px;
-  background:#eee;
-}
 
 
 
