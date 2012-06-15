@@ -1,12 +1,13 @@
 
 <div class="wrap">
   <nav>
-<%= render(:partial => "/refinery/menu", :locals => {
-             :dom_id => 'menu',
-             :css => 'menu'
-           }) %>
+		<%= render(:partial => "/refinery/menu", :locals => {:dom_id => 'menu',:css => 'menu' }) %>
   </nav>
 
-  <h1><small>What's <span>happening in</span></small><br />g5<em>engineering</em></h1>
-  <p>We are the leading provider of vertical-specific Local Marketing Solutions that help companies get found online, generate more qualified leads, convert more leads into new customers, track marketing performance, and optimize to the marketing sources with the best return on investment.</p>
+  <% if home_page? %>
+	  <h1><small>What's <span>happening in</span></small><br />g5<em>engineering</em></h1>
+	  <p>We are the leading provider of vertical-specific Local Marketing Solutions that help companies get found online, generate more qualified leads, convert more leads into new customers, track marketing performance, and optimize to the marketing sources with the best return on investment.</p>
+	<% else %>
+		<h1>g5<em>engineering</em></h1>	
+	<% end %>  
 </div>
