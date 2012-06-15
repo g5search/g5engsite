@@ -11,8 +11,8 @@ header {
 
 header ul {
   position:absolute;
-  right:0; top:65px;
-  width: 510px;
+  right:0; top:30px;
+  width: 670px;
   text-shadow:none;
 }
 header ul li{
@@ -69,7 +69,7 @@ header li.last a{
 }
 
 header h1 {
-  padding-top:55px;
+  padding-top:90px;
   font-size:171px;
   font-weight:normal;
   color:#282828;
@@ -106,7 +106,7 @@ header img.arrow-down-left {
 
 // 
 .column {
-  width:317px;
+  width:310px;
   min-height:350px;
   padding:0 10px;
   float:left;
