@@ -1,56 +1,39 @@
-<%# render '/refinery/content_page' %>
-
 <section id="row1">
   <div class="wrap">
     <div class="column">
       <h2 class="circle"><span>This is</br> What We</br> Do</span></h2>
-      <%#raw @page.content_for(:bubble1) %>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+      <%=raw @page.content_for(:circle1) %>
     </div>
 
     <div class="column">
       <h3 class="circle"><span>This is</br> How We</br> Do It</span></h3>
-      <%#raw @page.content_for(:bubble2) %>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+      <%=raw @page.content_for(:circle2) %>
     </div>
 
     <div class="column right">
       <h3 class="circle"><span>This is</br> What We</br> Use</span></h3>
-      <%#raw @page.content_for(:bubble3) %>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+      <%=raw @page.content_for(:circle3) %>
     </div>
   </div>
 </section>
 
 <section id="row2">
   <div class="wrap">
-    <div class="left">
-      <%=raw @page.content_for(:row_two) %>
-      <h2>hello</h2>
-      <h3>this is sub line</h3>
-      <ul>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-      </ul>
-      <p>this is a paragraph</p>
+    <div class="row_left">
+      <%=raw @page.content_for(:row_two_left) %>
     </div>
-    <div class="right">
+    <div class="row_right">
       <div id="slides">
-        <div class="slides_accent"></div>
+        <div class="slides_accent"></div>   
+          
+          <% if @page.images.present? %>
+            <div id="featured"> 
+              <% @page.images.each do |image| %>
+                <%= image_tag(image.thumbnail("620x350").url) %>
+              <% end %>
+            </div>
+          <% end %>  
+
       </div>
     </div> 
   </div>
@@ -58,33 +41,17 @@
 
 <section id="row3">
   <div class="wrap">
-    <div class="left">
-      <%=raw @page.content_for(:row_three) %>
-      <h2>hello</h2>
-      <h3>this is sub line</h3>
-      <ul>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-      </ul>
-      <p>this is a paragraph</p>
+    <div class="row_left">
+      <%=raw @page.content_for(:row_three_left) %>
     </div>
-    <div class="right">
+    <div class="row_right">
       <div id="slides">
-        <div class="slides_accent"></div>
+        <div id="video">
+          <%=raw @page.content_for(:row_three_right) %>
+        </div>
       </div>
     </div> 
   </div>
 </section>
 
 
-
-
-<section id='body_content'>
-  <%=raw @page.content_for(:body) %>
-</section>
-
-<section id='side_content'>
-  <%=raw @page.content_for(:side) %>
-</section>
