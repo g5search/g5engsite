@@ -66,6 +66,7 @@ GEM
       eventmachine (>= 0.12.9)
     erubis (2.7.0)
     eventmachine (0.12.10)
+    excon (0.14.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffi (1.0.11)
@@ -82,6 +83,14 @@ GEM
       em-websocket (>= 0.2.0)
       guard (>= 1.1.0)
       multi_json (~> 1.0)
+    heroku (2.27.3)
+      heroku-api (~> 0.2.5)
+      launchy (>= 0.3.2)
+      netrc (~> 0.7.4)
+      rest-client (~> 1.6.1)
+      rubyzip
+    heroku-api (0.2.5)
+      excon (~> 0.14.0)
     hike (1.2.1)
     i18n (0.6.0)
     journey (1.0.3)
@@ -89,6 +98,8 @@ GEM
       railties (>= 3.2.0, < 5.0)
       thor (~> 0.14)
     json (1.7.3)
+    launchy (2.1.0)
+      addressable (~> 2.2.6)
     libv8 (3.3.10.4)
     listen (0.4.5)
       rb-fchange (~> 0.0.5)
@@ -100,10 +111,12 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.18)
     multi_json (1.3.5)
+    netrc (0.7.4)
     orm_adapter (0.0.7)
     paper_trail (2.6.3)
       activerecord (~> 3.0)
       railties (~> 3.0)
+    pg (0.13.2)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
@@ -190,8 +203,11 @@ GEM
       refinerycms-core (= 2.0.4)
     refinerycms-settings (2.0.1)
       refinerycms-core (~> 2.0.1)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     routing-filter (0.3.1)
       actionpack
+    rubyzip (0.9.9)
     sass (3.1.18)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
@@ -229,7 +245,9 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   guard
   guard-livereload
+  heroku
   jquery-rails
+  pg
   rails (= 3.2.3)
   refinerycms (~> 2.0.0)
   refinerycms-blog (~> 2.0.0)

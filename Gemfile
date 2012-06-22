@@ -22,9 +22,14 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :production do
+  gem 'pg'
+end
+
 gem 'jquery-rails'
 gem 'bootstrap-sass'
 gem 'bourbon'
+gem 'heroku'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
