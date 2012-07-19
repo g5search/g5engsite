@@ -61,4 +61,5 @@ gem 'refinerycms-profiles', :path => 'vendor/extensions'
 group :development do
   gem 'guard'
   gem 'guard-livereload'
+  gem 'taps'
 end
