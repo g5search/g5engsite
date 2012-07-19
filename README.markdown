@@ -7,21 +7,13 @@ how we do it, and what we do for fun.  If you are a contributor, awesome. Clone 
 repo and get started!
 
 ```plain
-git clone git@github.com:libryder/g5devsite.git  
-cd g5devsite
+git clone https://github.com/g5search/g5engsite.git
+cd g5engsite
 bundle
 rake db:migrate
 rake db:seed
 rails s
 ```  
-
-###Add a hostname (to access production)
-**sudo nano /etc/hosts**  
-
-Add the following line:  
-```bash
-74.207.249.68    g5engsite.com
-```
 
 ###RefineryCMS Guides  
 * Documentation is available in the [guides](http://refinerycms.com/guides)
