@@ -20,7 +20,7 @@
 <section id="row2">
   <div class="wrap">
     <div class="row_left">
-      <%=raw @page.content_for(:row_two_left) %>
+      <%=raw @page.content_for(:side_body) %>
     </div>
     <div class="row_right">
       <div id="slides">
@@ -38,20 +38,3 @@
     </div> 
   </div>
 </section>
-
-<section id="row3">
-  <div class="wrap">
-    <div class="row_left">
-      <%=raw @page.content_for(:row_three_left) %>
-    </div>
-    <div class="row_right">
-      <div id="slides">
-        <div id="video">
-          <%=raw @page.content_for(:row_three_right) %>
-        </div>
-      </div>
-    </div> 
-  </div>
-</section>
-
-
