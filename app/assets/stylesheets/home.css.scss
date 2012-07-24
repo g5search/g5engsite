@@ -107,13 +107,12 @@ header img.arrow-down-left {
 // 
 .column {
   width:310px;
-  min-height:350px;
+  min-height:200px;
   padding:0 10px;
   float:left;
   position:relative;
   &.right { 
-  	padding-right:0; 
-  	float:right;
+	 right:14px;
   }
   p{
     display:block;
@@ -139,7 +138,7 @@ header img.arrow-down-left {
   margin-left:35px;
   position:absolute;
   top: -37px;
-  left:55px;
+  left:85px;
   padding:0;
   margin:0;
   span{
@@ -172,7 +171,7 @@ h2.circle {
 }
 
 #row1 {
-  height:500px;
+  height:210px;
   background:#fff;
   .wrap{
     margin:0 auto;
