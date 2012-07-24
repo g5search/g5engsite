@@ -1,1 +1,22 @@
-<%= render '/refinery/content_page' %>
+<div class="wrap">
+	
+	<section id='body_content'>
+		<%=raw @page.content_for(:body) %>
+	</section>
+	
+	<% if @page.images.present? %>
+		<section id='side_image'>
+      <% @page.images.each do |image| %>
+        <%= image_tag(image.url) %>
+      <% end %>
+		</section>
+	<% end %>
+	
+	<% if @page.content_for(:side_body) %>
+		<section id='side_body_content'>
+	  	<%=raw @page.content_for(:side_body) %>
+		</section>
+	<% end %>
+	
+	
+</div>
