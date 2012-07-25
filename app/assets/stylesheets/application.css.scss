@@ -109,7 +109,7 @@ header em { font-style:normal; color:#fd742a; }
 /* show page */
 
 #body_content,#side_body_content,#profiles { 
-	p, li { line-height:150%; font-size:12pt;}
+	p, li, div.profile-thumb { line-height:150%; font-size:12pt;}
 	h1,h2,h3,h4,h5,h6 { font-family: 'Rokkitt', serif; color:#FD742A; text-shadow: 1px 1px 0 #282828; }
 	h1 { font-size: 250%; }
 	h2 { font-size: 230%; }
@@ -137,6 +137,7 @@ header em { font-style:normal; color:#fd742a; }
 #side_body_content { float:right; margin:30px 0 20px 20px; width:270px; border:5px solid #D2D2D2; padding:5px 15px; border-radius:10px;}
 
 #profiles {
+	a { text-decoration:none; }
 	div.profile-thumb {
 		float:left;
 		padding:20px;
