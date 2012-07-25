@@ -105,64 +105,6 @@ header img.arrow-down-left {
   top:393px; left:285px;
 }
 
-footer {
-  color:#787878;
-  min-height:150px;height:auto !important;height:150px;
-  background-image: linear-gradient(bottom, #F5F5F5 10%, #EDEDED 55%, #DBDBDB 78%);
-  background-image: -o-linear-gradient(bottom, #F5F5F5 10%, #EDEDED 55%, #DBDBDB 78%);
-  background-image: -moz-linear-gradient(bottom, #F5F5F5 10%, #EDEDED 55%, #DBDBDB 78%);
-  background-image: -webkit-linear-gradient(bottom, #F5F5F5 10%, #EDEDED 55%, #DBDBDB 78%);
-  background-image: -ms-linear-gradient(bottom, #F5F5F5 10%, #EDEDED 55%, #DBDBDB 78%);
-
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.1, #F5F5F5),
-    color-stop(0.55, #EDEDED),
-    color-stop(0.78, #DBDBDB)
-  );
-  padding:1px 0;
-}
-footer .wrap {}
-footer .cols1 {
-  float:left;
-  width:40%;
-}
-footer .cols {
-  float:left;
-  width:20%;
-}
-footer a {
-  color:#787878;
-  text-decoration:none;
-}
-footer a:hover {
-  text-decoration:underline;
-}
-footer ul,
-footer li {
-  list-style:none;
-  margin:0;padding:0;
-  line-height:1.5em;
-}
-footer p.heading {
-  font-weight:bold;
-  padding:0;margin:0;
-  padding:15px 0 5px 0;
-}
-footer p.copyright {
-  padding:100px 0 0 20px;
-}
-/* remove */
-footer p.temp {
-  position:absolute;
-  top:20px;left:20px;
-  width:200px;
-  color:#ccc;
-}
-
-
 // 
 .column {
   width:310px;
@@ -630,4 +572,4 @@ ul.orbit-bullets li.active.has-thumb {
   .timer { display: none !important; }
   div.caption { background:transparent; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);zoom: 1; }
 
-
+#page { width:auto; position:static; }
