@@ -107,13 +107,12 @@ header img.arrow-down-left {
 // 
 .column {
   width:310px;
-  min-height:210px;
+  min-height:200px;
   padding:0 10px;
   float:left;
   position:relative;
   &.right { 
-  	padding-right:0; 
-  	float:right;
+	 right:14px;
   }
   p{
     display:block;
@@ -153,7 +152,7 @@ header img.arrow-down-left {
 		  }
 		}
 		#middlecircle {
-			left:90px
+			left:76px
 		}
 	}
 	a:hover {
