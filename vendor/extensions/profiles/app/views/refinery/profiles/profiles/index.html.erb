@@ -1,14 +1,14 @@
-<% content_for :body_content_left do %>
-
-    <% @profiles.each do |profile| %>
-      <div class="profile">
-      	<%= image_fu profile.picture, nil %>
-      	<%# profile.name.html_safe %>
-      	<%# profile.bio.html_safe %>
-        <%= link_to profile.name, refinery.profiles_profile_path(profile) %>
-      </div>
+<div class="wrap">
+	<section id='profiles'>
+		<h1>Meet The Team</h1>
+	  <% @profiles.each do |profile| %>
+      <div class="profile-thumb">
+			<%= link_to(refinery.profiles_profile_path(profile)) do %>
+      	<%= image_fu profile.picture, nil %><br />
+				<%= profile.name %><br />
+				<%= profile.title %>
+      <% end %>
+			</div>
     <% end %>
-
-<% end %>
-
-<%= render '/refinery/content_page' %>
+	</section>
+</div>

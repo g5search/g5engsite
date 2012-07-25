@@ -85,7 +85,7 @@ header small {
 
 header small span {
   position:relative;
-  top: 9px;
+  top: 15px;
 }
 
 header em { font-style:normal; color:#fd742a; }
@@ -107,7 +107,7 @@ header img.arrow-down-left {
 // 
 .column {
   width:310px;
-  min-height:350px;
+  min-height:210px;
   padding:0 10px;
   float:left;
   position:relative;
@@ -124,55 +124,69 @@ header img.arrow-down-left {
   }
 }
 
-
-.circle {
-  border:18px solid #fd742a;
-  background:#df692a;
-  text-shadow:#c55215;
-  color:#fff;
-  height:182px;
-  width:182px;
-  -moz-border-radius:129px;
-  -webkit-border-radius:129px;
-  border-radius:129px;
-  text-align:center;
-  margin-left:35px;
-  position:absolute;
-  top: -37px;
-  left:55px;
-  padding:0;
-  margin:0;
-  span{
-    display:block;
-    width:142px;
-    font-size:25px;
-    padding:45px 20px 0 20px;
-    margin:0;
-  }
-}
-
-h2.circle {
-  border:22px solid #fd742a;
-  width:268px;
-  height:268px;
-  -moz-border-radius:155px;
-  -webkit-border-radius:155px;
-  border-radius:155px;
-  top: -131px;
-  left:10px;
-  padding:0;
-  margin:0;
-  span{
-    display:block;
-    width:188px;
-    font-size:40px;
-    padding:63px 40px 0 40px;
-    margin:0;
-  }
+.column {
+	a {
+		text-decoration:none;
+		.circle {
+		  border:18px solid #fd742a;
+		  background:#df692a;
+		  text-shadow:#c55215;
+		  color:#fff;
+		  height:182px;
+		  width:182px;
+		  -moz-border-radius:129px;
+		  -webkit-border-radius:129px;
+		  border-radius:129px;
+		  text-align:center;
+		  margin-left:35px;
+		  position:absolute;
+		  top: -37px;
+		  left:55px;
+		  padding:0;
+		  margin:0;
+		  span{
+		    display:block;
+		    width:142px;
+		    font-size:25px;
+		    padding:45px 20px 0 20px;
+		    margin:0;
+		  }
+		}
+		#middlecircle {
+			left:90px
+		}
+	}
+	a:hover {
+		.circle {
+		  border:18px solid #df692a;
+		  background:#fd742a;
+		}
+		h2.circle {
+			border:22px solid #df692a;
+		}
+	}
+	h2.circle {
+	  border:22px solid #fd742a;
+	  width:268px;
+	  height:268px;
+	  -moz-border-radius:155px;
+	  -webkit-border-radius:155px;
+	  border-radius:155px;
+	  top: -131px;
+	  left:10px;
+	  padding:0;
+	  margin:0;
+	  span{
+	    display:block;
+	    width:188px;
+	    font-size:40px;
+	    padding:63px 40px 0 40px;
+	    margin:0;
+	  }
+	}
 }
 
 #row1 {
-  height:500px;
   background:#fff;
   .wrap{
     margin:0 auto;
