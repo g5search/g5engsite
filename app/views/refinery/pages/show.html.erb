@@ -1,8 +1,9 @@
 <div class="wrap">
 	
 	<section id='body_content'>
-		<%=raw @page.content_for(:body) %>
-	</section>
+		<section id='body_content_left'>
+	  	<%=raw @page.content_for(:body) %>
+  	</section>
 	
 	<% if @page.images.present? %>
 		<section id='side_image'>
@@ -13,10 +14,10 @@
 	<% end %>
 	
 	<% if @page.content_for(:side_body) %>
-		<section id='side_body_content'>
+		<section id='body_content_right'>
 	  	<%=raw @page.content_for(:side_body) %>
 		</section>
 	<% end %>
-	
+	</section>
 	
 </div>
