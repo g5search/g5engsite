@@ -1,17 +1,17 @@
 <section id="row1">
   <div class="wrap">
     <div class="column">
-      <h2 class="circle"><span>This is</br> What We</br> Do</span></h2>
+      <a href="/about-g5/this-is-what-we-do"><h2 class="circle" id="leftcircle"><span>This is</br> What We</br> Do</span></h2></a>
       <%=raw @page.content_for(:circle1) %>
     </div>
 
     <div class="column">
-      <h3 class="circle"><span>This is</br> How We</br> Do It</span></h3>
+      <a href="/about-g5/this-is-how-we-do-it"><h3 class="circle" id="middlecircle"><span>This is</br> How We</br> Do It</span></h3></a>
       <%=raw @page.content_for(:circle2) %>
     </div>
 
     <div class="column right">
-      <h3 class="circle"><span>This is</br> What We</br> Use</span></h3>
+      <a href="/about-g5/this-is-who-we-are"><h3 class="circle" id="rightcircle"><span>This is</br> What We</br> Use</span></h3></a>
       <%=raw @page.content_for(:circle3) %>
     </div>
   </div>
@@ -20,7 +20,7 @@
 <section id="row2">
   <div class="wrap">
     <div class="row_left">
-      <%=raw @page.content_for(:row_two_left) %>
+      <%=raw @page.content_for(:side_body) %>
     </div>
     <div class="row_right">
       <div id="slides">
@@ -38,20 +38,3 @@
     </div> 
   </div>
 </section>
-
-<section id="row3">
-  <div class="wrap">
-    <div class="row_left">
-      <%=raw @page.content_for(:row_three_left) %>
-    </div>
-    <div class="row_right">
-      <div id="slides">
-        <div id="video">
-          <%=raw @page.content_for(:row_three_right) %>
-        </div>
-      </div>
-    </div> 
-  </div>
-</section>
-
-
