@@ -165,7 +165,7 @@ header em { font-style:normal; color:#fd742a; }
 		margin:20px;
 	}
 }
-.blog_comment_author { background:none transparent; min-height:0; color:#000; }
+.blog_post footer, .blog_comment_author { background:none transparent; min-height:0; color:#000; }
 .new_comment {
 	label { display:block; font-size:12pt; font-weight:bold; margin:5px 0; }
 	input[type="text"], input[type="email"], textarea { width:350px; border:1px solid #000; margin-bottom:10px; padding:5px; }
