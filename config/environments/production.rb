@@ -68,4 +68,6 @@ G5devsite::Application.configure do
   ENV['S3_KEY']='AKIAJAPI4TNRQGSADFFA'
   ENV['S3_SECRET']='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'
   ENV['S3_BUCKET']='g5engineering'
+  Refinery::Core.config.s3_backend = true
+
 end
