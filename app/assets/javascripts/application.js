@@ -18,6 +18,11 @@
 
 $(document).ready(function() {
 
+  $('#about_accordion').accordion({
+    active: false,
+    collapsible: true
+  })
+
   $('#featured').orbit({
      animation: 'fade',                  // fade, horizontal-slide, vertical-slide, horizontal-push
      animationSpeed: 1000,                // how fast animtions are
