@@ -14,8 +14,10 @@
 //= require jquery_ujs
 //= require orbit-1.4
 //= require_tree .
+//= require jquery.ui.accordion
 
 $(document).ready(function() {
+
   $('#featured').orbit({
      animation: 'fade',                  // fade, horizontal-slide, vertical-slide, horizontal-push
      animationSpeed: 1000,                // how fast animtions are
@@ -34,5 +36,5 @@ $(document).ready(function() {
      bulletThumbLocation: '',		 // location from this file where thumbs will be
      afterSlideChange: function(){}, 	 // empty function 
      fluid: true                         // or set a aspect ratio for content slides (ex: '4x3') 
-	});
-});
+	})
+})

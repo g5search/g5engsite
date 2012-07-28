@@ -9,6 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require jquery.ui.accordion
 */
 
 @import "normalize";
@@ -39,7 +40,7 @@ header {
 header ul {
   position:absolute;
   right:0; top:65px;
-  width: 510px;
+  width: 520px;
   text-shadow:none;
 }
 header ul li{
@@ -231,8 +232,7 @@ footer p.temp {
   width:200px;
   color:#ccc;
 }
-
-
+.ui-accordion .ui-accordion-content { overflow:hidden !important; }
 
 
 
