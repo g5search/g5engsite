@@ -31,7 +31,7 @@ h2 { font-size:40px; text-shadow:-1px -1px 0 #c55215; }
 // start header
 
 header {
-  height:215px;
+  height:120px;
   background:url(header-bg.png) repeat #eee;
   border-bottom:25px solid #383838;
   text-shadow: 1px 1px 0 white;
@@ -39,7 +39,8 @@ header {
 
 header ul {
   position:absolute;
-  right:0; top:65px;
+  right:0; 
+  top: 0;
   width: 520px;
   text-shadow:none;
 }
@@ -92,7 +93,6 @@ header li.last a{
 }
 
 header h1 {
-  padding-top:50px;
   font-size:70px;
   font-weight:normal;
   color:#282828;
@@ -154,7 +154,12 @@ header em { font-style:normal; color:#fd742a; }
 #page { width:1000px; position:relative; margin:auto; }
 #page #body_content { width:auto; float:none;}
 #body_content_left { float:left; width:670px; }
-#body_content_right { float:right; margin:30px 0 20px 20px; width:270px; border:5px solid #D2D2D2; padding:5px 15px; border-radius:10px;}
+
+#body_content_right { position: absolute; right: 0; margin:30px 0 20px 20px; width:270px; border:5px solid #D2D2D2; padding:5px 15px; border-radius:10px;}
+#body_content_right ul { list-style: none inside }
+#body_content_right ul li { padding: 5px }
+#body_content_right ul li a { text-decoration: none }
+
 #body_content_left header { height: auto; background: none transparent; border-bottom: none 0px; text-shadow: 0; }
 #body_content_left header h1 { padding:0; line-height:150%; font-size: 2em; margin: 0.67em 0;}
 #body_content_left header h1 a { text-decoration:none;}
