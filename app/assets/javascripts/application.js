@@ -51,8 +51,14 @@ $(document).ready(function() {
 
     $('html, body').animate({
       scrollTop: $("#"+div_to_scroll).offset().top
-    }, 1000);
+    }, 1000)
     return false
+  })
+
+  $('.to_the_top').click(function() {
+    $('html, body, #page_container').animate({
+      scrollTop: 0
+    }, 750)
   })
 
   $('#featured').orbit({
