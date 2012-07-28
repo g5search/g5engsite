@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  height:485px;
+  height:408px;
   background:url(header-bg.png) repeat #eee;
   border-bottom:25px solid #383838;
   text-shadow: 1px 1px 0 white;
@@ -12,7 +12,7 @@ header {
 
 header ul {
   position:absolute;
-  right:0; top:30px;
+  right:0; top:0px;
   width: 670px;
   text-shadow:none;
 }
@@ -70,7 +70,6 @@ header li.last a{
 }
 
 header h1 {
-  padding-top:90px;
   font-size:171px;
   font-weight:normal;
   color:#282828;
@@ -94,7 +93,7 @@ header em { font-style:normal; color:#fd742a; }
 header p {
   float: right;
   width: 652px;
-  /*margin-top: 50px;*/
+  margin-top: 28px;
   line-height: 27px;
   font-size: 14px;
   color:#666;
