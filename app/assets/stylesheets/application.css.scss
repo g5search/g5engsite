@@ -39,9 +39,8 @@ header {
 
 header ul {
   position:absolute;
-  right:0; 
-  top: 0;
-  width: 520px;
+  right:0; top:0px;
+  width: 566px;
   text-shadow:none;
 }
 header ul li{
@@ -51,8 +50,8 @@ header ul li{
 }
 
 header ul a {
-  padding:14px 22px 14px 22px;
-  border-right:1px solid #333;
+  padding:14px 15px 14px 25px;
+  width:100px;
   color:#fff;
   text-decoration:none;
   background:#282828;
@@ -64,6 +63,10 @@ header ul a {
 
 }
 
+header ul a:hover, header ul li.selected a {
+  background: #FD742A;
+  color: #444;
+}
 
 header ul span {
   display:block;
@@ -253,10 +256,13 @@ footer p.copyright {
 }
 /* remove */
 footer p.temp {
-  position:absolute;
-  top:20px;left:20px;
-  width:200px;
-  color:#ccc;
+  position: absolute;
+  top: 93px;
+  left: -11px;
+  color: #CCC;
+  background: black;
+  border-radius: 5px;
+  width: 28px;
 }
 .ui-accordion .ui-accordion-content { overflow:hidden !important; } 
 #kill_ie {
