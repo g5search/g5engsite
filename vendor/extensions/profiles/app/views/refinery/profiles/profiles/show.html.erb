@@ -7,14 +7,16 @@
     </section>
 
     <section id='body_content_right'>
-      <h2>The Team</h2>
-      <ul id="profiles">
-        <% @profiles.each do |profile| %>
-          <li>
-            <%= link_to "#{profile.name} - #{profile.title}", refinery.profiles_profile_path(profile) %>
-          </li>
-        <% end %>
-      </ul>
+      <div id="the_team">
+        <h2>The Team</h2>
+        <ul id="profiles">
+          <% @profiles.each do |profile| %>
+            <li>
+              <%= link_to "#{profile.name} - #{profile.title}", refinery.profiles_profile_path(profile) %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
     </section>
   </section>
 </div>

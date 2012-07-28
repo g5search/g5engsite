@@ -154,7 +154,25 @@ header em { font-style:normal; color:#fd742a; }
 #page #body_content { width:auto; float:none;}
 #body_content_left { float:left; width:670px; }
 
-#body_content_right { position: absolute; right: 0; margin:30px 0 20px 20px; width:270px; border:5px solid #D2D2D2; padding:5px 15px; border-radius:10px;}
+#body_content_right #the_team { 
+  margin:30px 0 20px 20px; 
+  width:270px; 
+  border:5px solid #D2D2D2; 
+  padding:5px 15px; 
+  border-radius:10px;
+  float: right
+}
+
+#body_content_right #about { 
+  margin:30px 0 20px 20px; 
+  width:270px; 
+  border:5px solid #D2D2D2; 
+  padding:5px 15px; 
+  border-radius:10px;
+  position: absolute; 
+  right: 0; 
+}
+
 #body_content_right ul { list-style: none inside }
 #body_content_right ul li { padding: 5px }
 #body_content_right ul li a { text-decoration: none }
@@ -240,9 +258,14 @@ footer p.temp {
   color:#ccc;
 }
 .ui-accordion .ui-accordion-content { overflow:hidden !important; } 
-
-
-
+#kill_ie {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  display: none;
+  background: #00006a;
+}
 
 
 

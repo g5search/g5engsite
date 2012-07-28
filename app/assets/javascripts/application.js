@@ -18,33 +18,27 @@
 
 (function($){$.fn.jScroll=function(e){var f=$.extend({},$.fn.jScroll.defaults,e);return this.each(function(){var a=$(this);var b=$(window);var c=new location(a);b.scroll(function(){a.stop().animate(c.getMargin(b),f.speed)})});function location(d){this.min=d.offset().top;this.originalMargin=parseInt(d.css("margin-top"),10)||0;this.getMargin=function(a){var b=d.parent().height()-d.outerHeight();var c=this.originalMargin;if(a.scrollTop()>=this.min)c=c+f.top+a.scrollTop()-this.min;if(c>b)c=b;return({"marginTop":c+'px'})}}};$.fn.jScroll.defaults={speed:"slow",top:10}})(jQuery);
 
-//keep element in view
-// (function($)
-// {
-//   $(document).ready( function()
-//   {
-//     var elementPosTop = $('#body_content_right').offset().top;
-//     $(window).scroll(function()
-//     {
-//       var wintop = $(window).scrollTop(), docheight = $(document).height(), winheight = $(window).height()
-//       //if top of element is in view
-//       if (wintop > elementPosTop)
-//       {
-//         //always in view
-//         $('#body_content_right').css({ "position":"relative", "float": "right", "top": (wintop-elementPosTop)+20+'px' })
-//       }
-//       else
-//       {
-//         //reset back to normal viewing
-//         $('#body_content_right').css({ "position":"absolute", "top": 0})
-//       }
-//     });
-//   });
-// })(jQuery);
-
 $(document).ready(function() {
 
-  $("#body_content_right").jScroll();
+  $("#body_content_right #about").jScroll()
+  console.log($.browser)
+  if ($.browser.safari) {
+    $('#kill_ie').css({
+      display: 'block',
+      "margin-top": -($(window).height()/2),
+      "margin-left": -($(window).width()/2),
+      height: $(window).height(),
+      widht: $(window).width()
+    })
+    $('#kill_ie img').css({
+      width: $(window).width()
+    })
+    $('html').css({
+      height: $(window).height(),
+      widht: $(window).width(),
+      overflow: 'hidden'
+    })
+  }
 
   $('.about-nav').click(function() {
     div_to_scroll = $(this).attr('href')
@@ -55,10 +49,11 @@ $(document).ready(function() {
     return false
   })
 
-  $('.to_the_top').click(function() {
+  $('.to_the_top').click(function(event) {
     $('html, body, #page_container').animate({
       scrollTop: 0
     }, 750)
+    return false
   })
 
   $('#featured').orbit({
