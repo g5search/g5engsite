@@ -1,9 +1,11 @@
 <div class="wrap">
   <section id='body_content'>
     <section id='body_content_left'>
-      <h1><%=raw @profile.name %> - <%=raw @profile.title %></h1>
-  		<%= image_fu @profile.picture, nil %>
-      <%= raw @profile.bio %>
+      <div>
+        <h1><%=raw @profile.name %> - <%=raw @profile.title %></h1>
+    		<%= image_fu @profile.picture, nil %>
+        <%= raw @profile.bio %>
+      </div>
     </section>
 
     <section id='body_content_right'>
