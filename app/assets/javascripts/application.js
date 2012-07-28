@@ -22,7 +22,7 @@ $(document).ready(function() {
 
   $("#body_content_right #about").jScroll()
   console.log($.browser)
-  if ($.browser.safari) {
+  if ($.browser.msie) {
     $('#kill_ie').css({
       display: 'block',
       "margin-top": -($(window).height()/2),
