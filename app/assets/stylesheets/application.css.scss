@@ -118,7 +118,7 @@ header em { font-style:normal; color:#fd742a; }
 	h4 { font-size: 190%; }
 	h5 { font-size: 170%; }
 	h6 { font-size: 150%; }
-	a { color:#FD742A; }
+	a { color:#FD742A; text-decoration: none }
 	a:hover { color:#DF692A; }
 	a:visited { color:#FA9A66; }
 }
@@ -130,7 +130,6 @@ header em { font-style:normal; color:#fd742a; }
 	width:670px;
 	img {
 		float:right; 
-		margin:0 0 20px 20px; 
 		border-radius:7px;
 	}
 }
@@ -159,6 +158,9 @@ header em { font-style:normal; color:#fd742a; }
 #body_content_right ul { list-style: none inside }
 #body_content_right ul li { padding: 5px }
 #body_content_right ul li a { text-decoration: none }
+
+#body_content_right ul li img { width: 21px; vertical-align: middle; float: left; padding-right: 15px; margin-left: -25px }
+
 
 #body_content_left header { height: auto; background: none transparent; border-bottom: none 0px; text-shadow: 0; }
 #body_content_left header h1 { padding:0; line-height:150%; font-size: 2em; margin: 0.67em 0;}
