@@ -146,6 +146,7 @@ header em { font-style:normal; color:#fd742a; }
 			border-radius:7px;
       max-width: 200px;
       height: auto;
+      margin: 0 0 20px 20px;
 		}
 	}
 }
@@ -265,6 +266,7 @@ footer p.temp {
   text-align: center;
   display: none;
   background: #00006a;
+  z-index: 8;
 }
 
 
