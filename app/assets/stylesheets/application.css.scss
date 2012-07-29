@@ -65,12 +65,15 @@ header ul a {
 
 header ul a:hover, header ul li.selected a {
   background: #FD742A;
-  color: #444;
+  color: #222;
 }
 
 header ul span {
   display:block;
   color:#88b6cb;
+}
+header ul .selected span, header ul a:hover span  {
+  color: #eee;
 }
 
 header ul li:hover {

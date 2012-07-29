@@ -21,7 +21,13 @@
 $(document).ready(function() {
 
   $("#body_content_right #about").jScroll()
-  console.log($.browser)
+  
+  if (window.location.hash != "") {
+    $('html, body').animate({
+      scrollTop: $(window.location.hash).offset().top
+    }, 1000)
+  }
+
   if ($.browser.msie) {
     $('#kill_ie').css({
       display: 'block',
