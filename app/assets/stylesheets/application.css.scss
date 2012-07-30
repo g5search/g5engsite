@@ -144,9 +144,12 @@ header em { font-style:normal; color:#fd742a; }
 #profiles {
 	a { text-decoration:none; }
 	div.profile-thumb {
-		float:left;
-		padding:20px;
-		text-align:center;
+    float: left;
+    margin: 20px;
+    text-align: center;
+    min-height: 270px;
+    min-width: 270px;
+
 		img {
 			border-radius:7px;
       max-width: 200px;
