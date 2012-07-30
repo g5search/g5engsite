@@ -134,8 +134,7 @@ header em { font-style:normal; color:#fd742a; }
 #body_content { 
 	float:left; 
 	width:670px;
-	img {
-		float:right; 
+	img { 
 		border-radius:7px;
 	}
 }
@@ -155,6 +154,15 @@ header em { font-style:normal; color:#fd742a; }
       margin: 0 0 20px 20px;
 		}
 	}
+}
+
+#profile_main img {
+  max-width: 200px;
+}
+
+#profile_main #profile_image {
+  margin: 0 0 20px 20px;
+  float:right;
 }
 
 #page { width:1000px; position:relative; margin:auto; }

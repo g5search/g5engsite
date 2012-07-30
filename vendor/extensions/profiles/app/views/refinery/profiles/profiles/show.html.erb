@@ -1,9 +1,9 @@
 <div class="wrap">
   <section id='body_content'>
     <section id='body_content_left'>
-      <div>
+      <div id="profile_main">
         <h1><%=raw @profile.name %> - <%=raw @profile.title %></h1>
-    		<%= image_fu @profile.picture, nil %>
+    		<%= image_fu @profile.picture, nil, :id => 'profile_image' %>
         <%= raw @profile.bio %>
       </div>
     </section>
