@@ -23,8 +23,11 @@ $(document).ready(function() {
   $("#body_content_right #about").jScroll()
   
   if (window.location.hash != "") {
+    var trim_index = window.location.hash.length - 3
+    var div_id = window.location.hash.substring(0, trim_index)
+    
     $('html, body').animate({
-      scrollTop: $(window.location.hash).offset().top
+      scrollTop: $(div_id).offset().top
     }, 1000)
   }
 
@@ -48,7 +51,8 @@ $(document).ready(function() {
 
   $('.about-nav').click(function() {
     div_to_scroll = $(this).attr('href')
-
+    console.log(div_to_scroll)
+    console.log($("#"+div_to_scroll))
     $('html, body').animate({
       scrollTop: $("#"+div_to_scroll).offset().top
     }, 1000)
