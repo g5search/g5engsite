@@ -39,7 +39,7 @@ header {
 
 header ul {
   position:absolute;
-  left:361px; top:27px;
+  right: -146px; top:27px;
   width: 600px;
   text-shadow:none;
 }
@@ -267,12 +267,12 @@ footer p.heading {
   padding:15px 0 5px 0;
 }
 footer p.copyright {
-  padding:100px 0 0 20px;
+  padding:54px 0 0 20px;
 }
 /* remove */
 footer p.temp {
   position: absolute;
-  top: 93px;
+  top: 46px;
   left: -11px;
   color: #CCC;
   background: black;
