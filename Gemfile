@@ -32,7 +32,6 @@ gem 'jquery-ui-rails'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
 gem 'bourbon'
-gem 'heroku'
 gem 'fog'
 
 # To use ActiveModel has_secure_password
