@@ -33,6 +33,7 @@ gem 'jquery-rails'
 gem 'bootstrap-sass'
 gem 'bourbon'
 gem 'fog'
+gem 'thin'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
