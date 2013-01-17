@@ -60,7 +60,7 @@ gem 'refinerycms-page-images', '~> 2.0.0'
 #  gem 'refinerycms-inquiries', '~> 2.0.0'
 #  gem 'refinerycms-search', '~> 2.0.0'
 gem 'refinerycms-profiles', :path => 'vendor/extensions'
-gem 'refinerycms-wordpress-import', :git => 'git@github.com:maleko/refinerycms-wordpress-import.git'
+gem 'refinerycms-wordpress-import', :git => 'git://github.com/maleko/refinerycms-wordpress-import.git'
 
 group :development do
   gem 'guard'

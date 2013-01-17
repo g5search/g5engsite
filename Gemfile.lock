@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:maleko/refinerycms-wordpress-import.git
+  remote: git://github.com/maleko/refinerycms-wordpress-import.git
   revision: f0738c4208cf7ee72fa7dde84451a950d6d7e41b
   specs:
     refinerycms-wordpress-import (0.4.1b)
