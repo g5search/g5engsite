@@ -37,6 +37,7 @@ public/javascripts/cache
 public/stylesheets/cache
 
 # Vendor Cache
+vendor/cache
 vendor/bundle
 
 # Acts as Indexed
