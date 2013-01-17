@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '1.9.3'
+
 gem 'rails', '3.2.11'
 
 # Bundle edge Rails instead:
@@ -30,8 +32,8 @@ gem 'jquery-ui-rails'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
 gem 'bourbon'
-gem 'heroku'
 gem 'fog'
+gem 'thin'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -58,7 +60,7 @@ gem 'refinerycms-page-images', '~> 2.0.0'
 #  gem 'refinerycms-inquiries', '~> 2.0.0'
 #  gem 'refinerycms-search', '~> 2.0.0'
 gem 'refinerycms-profiles', :path => 'vendor/extensions'
-
+gem 'refinerycms-wordpress-import', :git => 'git@github.com:maleko/refinerycms-wordpress-import.git'
 
 group :development do
   gem 'guard'
