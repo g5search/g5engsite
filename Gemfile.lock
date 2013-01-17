@@ -92,7 +92,7 @@ GEM
       nokogiri (~> 1.5.0)
       ruby-hmac
     formatador (0.2.3)
-    friendly_id (4.0.8)
+    friendly_id (4.0.9)
     globalize3 (0.2.0)
       activemodel (>= 3.0.0)
       activerecord (>= 3.0.0)
