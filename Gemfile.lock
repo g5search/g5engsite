@@ -114,7 +114,7 @@ GEM
       jquery-rails
       railties (>= 3.1.0)
     json (1.7.7)
-    libv8 (3.3.10.4)
+    libv8 (3.16.14.3)
     listen (0.4.7)
       rb-fchange (~> 0.0.5)
       rb-fsevent (~> 0.9.1)
@@ -167,6 +167,7 @@ GEM
       ffi (>= 0.5.0)
     rdoc (3.12.2)
       json (~> 1.4)
+    ref (1.0.5)
     refinerycms (2.0.5)
       bundler (~> 1.0)
       refinerycms-authentication (= 2.0.5)
@@ -246,8 +247,9 @@ GEM
       rest-client (>= 1.4.0, < 1.7.0)
       sequel (~> 3.20.0)
       sinatra (~> 1.0.0)
-    therubyracer (0.10.1)
-      libv8 (~> 3.3.10)
+    therubyracer (0.12.1)
+      libv8 (~> 3.16.14.0)
+      ref
     thin (1.5.0)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -289,6 +291,6 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   sqlite3
   taps
-  therubyracer
+  therubyracer (~> 0.12.1)
   thin
   uglifier (>= 1.0.3)
