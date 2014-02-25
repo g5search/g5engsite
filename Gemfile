@@ -2,7 +2,8 @@ source 'https://rubygems.org'
 
 ruby '1.9.3'
 
-gem 'rails', '3.2.13'
+gem 'rails', '3.2.17'
+gem 'nokogiri', '~> 1.5.11'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -19,7 +20,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  gem 'therubyracer', :platform => :ruby
+  gem "therubyracer", "~> 0.12.1", :platform => :ruby
 
   gem 'uglifier', '>= 1.0.3'
 end
